@@ -1,0 +1,151 @@
+@import "../../global.scss";
+.sidebar{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    left:-100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 1s ease;
+    background-color: #00000022;
+    z-index: 15;
+    position: fixed;
+    top: 0rem;
+    backdrop-filter: blur(5px);
+    @include mobile_potrait{
+        display: flex;
+    }
+    
+    &.active{
+        left: 0;
+    }
+    .close{
+        right: 20px;
+        position: absolute;
+        top: 20px;
+        img{
+            transform: rotate(-135deg);
+        }
+    }
+    
+    ul{
+        margin-top: 100px;
+        padding: 0;
+        list-style: none;
+        font-weight: 400;
+        color:black;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        .menuItem1{
+            transition: left 1s ease;
+            transition-delay: 0.1s;
+        }
+        .menuItem2{
+            transition:  left 1s ease;
+            transition-delay: 0.15s;
+        }
+        .menuItem3{
+            transition:  left 1s ease;
+            transition-delay: 0.2s;
+        }
+        .menuItem4{
+            transition:  left 1s ease;
+            transition-delay: 0.25s;
+        }
+        .menuItem5{
+            transition:  left 1s ease;
+            transition-delay: 0.3s;
+        }
+        .menuItem6{
+            transition:  left 1s ease;
+            transition-delay: 0.35s;
+        }
+        .menuItem7{
+            transition:  left 1s ease;
+            transition-delay: 0.4s;
+        }
+        .menuItem8{
+            transition:  left 1s ease;
+            transition-delay: 0.45s;
+        }
+        .menuItem9{
+            transition:  left 1s ease;
+            transition-delay: 0.5s;
+        }
+        li{
+            position: relative;
+            transition: left 0s ease;
+            left:-100vw;
+            margin-bottom: 2rem;
+            a{
+                text-decoration: none;
+                font-size: 1rem;
+                color: white;
+                @include mobile_potrait{
+                    font-size: 20px;
+                }
+                @include mobile_landscape{
+                    font-size: 0.8rem;
+                }
+            }
+            &:hover{
+                font-weight: 700;
+            }
+            span{
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                font-size: 10px;
+                color: #fff;
+                letter-spacing: 2px;
+            }
+            &.active{
+                left:0;
+            }
+            .socialLinks{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                a{
+                  font-size: 1.5rem;
+                  padding: 0.2rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #ffffff;
+                  position: relative;
+                  text-shadow: 1px 1px 0px #000;
+                  margin-right: 0.5rem;
+                  text-decoration: none;
+                  @include mobile_potrait{
+                    font-size: 2rem;
+                    margin-right: 0rem;
+                    margin: 10px;
+                  }
+                  .fab{
+                      z-index: 1;
+                  }
+                }
+                a:nth-child(1){
+                    color: #C1CDEB;
+                }
+                a:nth-child(2){
+                    color: #6FE8FF;
+                }
+                a:nth-child(3){
+                    color: #0B94E0;
+                }
+                a:nth-child(4){
+                    color: #6A94FF;
+                }
+            }
+        }
+    }
+} 

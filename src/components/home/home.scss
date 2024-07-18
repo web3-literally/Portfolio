@@ -1,0 +1,239 @@
+@import "../../global.scss";
+.home{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 85px 64px;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile_potrait {
+        // height: auto;
+        padding: 85px 32px;
+        background-size: cover;
+        background-position: 50%;
+    }
+    .content{
+        display: flex;
+        width: 90%;
+        height: 100%;
+        @include mobile_potrait {
+            flex-direction: column;
+            width: 100%;
+        }
+        .left{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include mobile_potrait {
+                align-items: flex-start;
+                width: 100%;
+            }
+            h1{
+                font-weight: normal;
+                margin-bottom: 0.5rem;
+                letter-spacing: 0.04em;
+                @media screen and (max-width: 820px)  {
+                }
+                @include mobile_potrait {
+                    font-size: 40px !important;
+                }
+                span{
+                }
+            }
+            .title1{
+                font-size: 5vw;
+                
+                span{
+                    color: #5971b1;
+                }
+            }
+            .title2{
+                background: linear-gradient(151.25deg, #99a8c9 36.76%, #17202400 127.37%);
+                background-repeat: repeat;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: rgba(0,0,0,0);
+                position: relative;
+                font-size: 3vw;
+                
+                span{
+                    position: absolute;
+                    left: 1px;
+                    top : -1px;
+                    background: linear-gradient(134.01deg, #FFFFFF 51.35%, rgba(255, 255, 255, 0) 71.53%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    opacity: 0.4;
+                    @include mobile_potrait {
+                        left: 1px;
+                    }
+                }
+            }
+            .text-shadow{
+                color: #fff;
+                text-shadow: 3px 2px 0px #000;
+                @include mobile_potrait {
+                    text-shadow: 2px 1px 0px #000;
+                }
+            }
+            .btns{
+                display: flex;
+                align-items: center;
+                grid-area: auto;
+                gap: 30px;
+                margin-top: 30px;
+                @include mobile_potrait {
+                    gap: 10px;
+                }
+                a{
+                    text-decoration: none;
+                }
+                .arrow{
+                    width: 64px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: linear-gradient(141.8deg, #5B88FF 10.93%, #2A62F7 98.79%);
+                    border-radius: 24px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        transform: scale(0.95);
+                    }
+                    @include mobile_potrait {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 20px;
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+        .right{
+            flex: 1;
+            perspective: 180px;
+            height: 100%;
+            position: relative;
+            @include mobile_potrait {
+                height: 100vw;
+                width: 100%;
+                flex: auto;
+            }
+            .coin1{
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                width: 17vw;
+                animation: cardAni 10s ease-in-out 0s infinite;
+                @keyframes cardAni {
+                    0% {
+                        transform: rotateY(-10deg) rotateX(10deg) translate3d(0px, 0px, -10px);
+                    }
+                    50% {
+                        transform: rotateY(10deg) rotateX(0deg) translate3d(-30px, -50px, 20px);
+                    }
+                    100% {
+                        transform: rotateY(-10deg) rotateX(10deg) translate3d(0px, 0px, -10px);
+                    }
+                }
+                @include mobile_potrait {
+                    width: 40vw;
+                    left: -20%;
+                }
+            }
+            .coin2{
+                animation: cardAni 10s ease-in-out 0s infinite;
+                position: absolute;
+                top: 10%;
+                right: 0%;
+                width: 13vw;
+                @keyframes cardAni {
+                    0% {
+                    transform: rotateY(10deg) rotateX(0deg) translate3d(0px, 0px, 10px);
+                    }
+                    50% {
+                        transform: rotateY(-10deg) rotateX(-10deg) translate3d(30px, 50px, -20px);
+                    }
+                    100% {
+                        transform: rotateY(10deg) rotateX(0deg) translate3d(0px, 0px, 10px);
+                    }
+                }
+                @include mobile_potrait {
+                    width: 30vw;
+                    right: 5%;
+                }
+            }
+            .coin3{
+                animation: cardAni 10s ease-in-out 0s infinite;
+                position: absolute;
+                bottom: 10%;
+                right: -10%;
+                width: 20vw;
+                @keyframes cardAni {
+                    0% {
+                        transform: rotateY(5deg) rotateX(5deg) translate3d(0px, 0px, 5px);
+                    }
+                    50% {
+                        transform: rotateY(-5deg) rotateX(-5deg) translate3d(-20px, -40px, -20px);
+                    }
+                    100% {
+                        transform: rotateY(5deg) rotateX(5deg) translate3d(0px, 0px, 5px);
+                    }
+                }
+                @include mobile_potrait {
+                    width: 60vw;
+                    right: -20%;
+                    bottom: 0;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 32px;
+                letter-spacing: -0.03em;
+                color: #ECF3FF;
+                opacity: 0.3;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                @include mobile_potrait {
+                    display: none;
+                }
+            }
+        }
+       
+    }
+    .desc{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        @include mobile_potrait {
+            display: flex;
+            position: absolute;
+        }
+        img{
+            width: 40px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #ECF3FF;
+            opacity: 0.3;
+        }
+    }
+
+}
+

@@ -1,0 +1,111 @@
+@import "global.scss";
+
+body{
+  
+}
+*{
+  box-sizing: border-box;
+}
+#root{
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #020317, #130117);
+}
+.app {
+  background-size: cover;
+  width: 100%;
+  @include mobile_potrait {
+  }
+}
+
+.label{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  h4{
+      font-size: 2vw;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color: #ECF3FF;
+      opacity: 0.1;
+      font-weight: normal;
+      margin-right: 10px;
+      @include mobile_potrait {
+        font-size: 32px;
+        line-height: 32px;
+      }
+  }
+  h3{
+      font-size: 3vw;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color: #ECF3FF;
+      opacity: 0.1;
+      font-weight: normal;
+      margin-right: 10px;
+      @include mobile_potrait {
+        font-size: 48px;
+        line-height: 72px;
+      }
+  }
+  h2{
+      font-size: 5vw;
+      font-weight: normal;
+      background: linear-gradient(320.51deg, #ABBADB 17.28%, #151D21 105.21%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      @include mobile_potrait {
+        font-size: 72px;
+        line-height: 72px;
+      }
+  }
+}
+
+.scroll{
+  position: absolute;
+  top: -3rem;
+}
+.pc {
+  display: flex;
+  @include mobile_potrait {
+    display: none !important;
+  }
+}
+.mob {
+  display: none !important;
+  @include mobile_potrait {
+    display: flex !important;
+  }
+}
+
+button:disabled {
+  background-color: #aaa !important;
+  color: #282828 !important;
+  // border-color: rgba(118, 118, 118, 0.3) !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2892f3;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c77bf46;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #57a7f2;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
