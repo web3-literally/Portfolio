@@ -37,7 +37,7 @@ export default function Skills() {
                 <div className="wrapper">
                     <div className="left" data-aos="fade-right">
                         <h2>Custom Blockchain Solutions</h2>
-                        <p>VTS Blockchain Engineers provides custom development solutions.</p>
+                        <p>Blockchain Engineers provides custom development solutions.</p>
                         <HashLink to="#contact"><MainButton label={'Get A Qoute'} /> </HashLink>
                     </div>
                     <div className="right" data-aos="fade-left">

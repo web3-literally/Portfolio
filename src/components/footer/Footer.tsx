@@ -61,22 +61,22 @@ export default function Footer() {
                             <div className="links">
                                 <HashLink to="/" smooth>About Us</HashLink>
                                 <HashLink to="/referral_program" smooth>Referral Program</HashLink>
-                                <a href="https://vt.solutions/Virtual_Trading_Solutions.pdf" className="" target="_blank" rel="noreferrer">Whitepaper</a>
+                                <a href="/" className="" target="_blank" rel="noreferrer">Whitepaper</a>
                             </div>
                         </div>
                         <div className="col">
                             <h3>Resources</h3>
                             <div className="links">
-                                <a href="https://github.com/VTS-Blockchain-Engineers-LLC" className="" target="_blank" rel="noreferrer">Github</a>
-                                <a href="https://medium.com/@VirtualTradingSolutions" className="" target="_blank" rel="noreferrer">Blog</a>
+                                <a href="https://github.com/web3-literally" className="" target="_blank" rel="noreferrer">Github</a>
+                                <a href="https://medium.com/" className="" target="_blank" rel="noreferrer">Blog</a>
                                 <HashLink to="/faqs" smooth>FAQs</HashLink>
                             </div>
                         </div>
                         <div className="col">
                             <h3>Legal</h3>
                             <div className="links">
-                                <a href="/assets/VTS_TOU_1.0.pdf" className="" target="_blank" rel="noreferrer">Terms of Service</a>
-                                <a href="/assets/VTS_PP_1.0.pdf" className="" target="_blank" rel="noreferrer">Privacy Policy</a>
+                                <a href="/" className="" target="_blank" rel="noreferrer">Terms of Service</a>
+                                <a href="/" className="" target="_blank" rel="noreferrer">Privacy Policy</a>
                             </div>
                         </div>
                     </div>
