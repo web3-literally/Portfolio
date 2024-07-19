@@ -127,9 +127,9 @@ export default function Portfolio() {
                     <h1>Porfolio</h1>
                 </div>
                 <div className="tab-list" data-aos="fade-left">
-                    <div className={`tab ${tabId === 0 ? 'active' : ''}`} onClick={() => setTabId(0)}> <span>NFT Marketplace</span> </div>
-                    <div className={`tab ${tabId === 1 ? 'active' : ''}`} onClick={() => setTabId(1)}><span>dApps</span></div>
-                    <div className={`tab ${tabId === 2 ? 'active' : ''}`} onClick={() => setTabId(2)}><span>Blocchain integration</span></div>
+                    <div className={`tab ${tabId === 0 ? 'active' : ''}`} onClick={() => setTabId(0)}> <span>Digital Assset Platform</span> </div>
+                    <div className={`tab ${tabId === 1 ? 'active' : ''}`} onClick={() => setTabId(1)}><span>Decentralized Application</span></div>
+                    <div className={`tab ${tabId === 2 ? 'active' : ''}`} onClick={() => setTabId(2)}><span>Game Platform</span></div>
                 </div>
 
                 <div className="tab-content" data-aos="fade-up">

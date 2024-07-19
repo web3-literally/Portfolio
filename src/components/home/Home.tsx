@@ -18,14 +18,14 @@ export default function Home() {
                 </div>
 
                 <div className="btns">
-                        <HashLink to="#contact"><MainButton label={'Get A Qoute'}/> </HashLink>
+                        <HashLink to="#contact"><MainButton label={'Get A Quote'}/> </HashLink>
                     </div>
                 {/* <div className="left" data-aos="fade-right">
                     
                     <h1 className='title1 text-shadow'>0xWeb3 Collective</h1>
                     <h1 className='title2 '>Blockchain Engineers<span>Blockchain Engineers</span></h1>
                     <div className="btns">
-                        <HashLink to="#contact"><MainButton label={'Get A Qoute'}/> </HashLink>
+                        <HashLink to="#contact"><MainButton label={'Get A Quote'}/> </HashLink>
                     </div>
                 </div> */}
                 {/* <div className="right"data-aos="fade-left">

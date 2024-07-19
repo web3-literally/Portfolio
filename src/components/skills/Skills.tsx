@@ -37,12 +37,12 @@ export default function Skills() {
                     <div className="left" data-aos="fade-right">
                         <h2>Custom Technical Solutions</h2>
                         <p>Our team provides custom development solutions.</p>
-                        <HashLink to="#contact"><MainButton label={'Get A Qoute'} /> </HashLink>
+                        <HashLink to="#contact"><MainButton label={'Get A Quote'} /> </HashLink>
                     </div>
                     <div className="right" data-aos="fade-left">
                         <h2>Cloud Services</h2>
                         <p>Essential tools to launch your creation, all in one place. AWS (EC2, S3, Lambda), Azure, Google Cloud</p>
-                        <div className="coming-soon">Coming Soon</div>
+                        {/* <div className="coming-soon">Coming Soon</div> */}
                     </div>
                 </div>
                 <div className="label"data-aos="fade-left">

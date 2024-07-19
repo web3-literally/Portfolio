@@ -33,7 +33,7 @@ export default function Topbar({ menuOpen, setMenuOpen }: MenuType) {
       <div className="navList">
         <ul>
           <li className={navId === "" ? "selected" : ""}>
-            <HashLink to="/#home" smooth>Hhome</HashLink>
+            <HashLink to="/#home" smooth>Home</HashLink>
           </li>
           <li className={navId === "projects" ? "selected" : ""}>
             <HashLink to="/#projects" smooth>Projects</HashLink>
