@@ -4,7 +4,7 @@ import './skills.scss'
 const skill_list = [
     {
         img : '/assets/imgs/skills_3d_img_01.png',
-        txt : 'BlockChain'
+        txt : 'Full Stack'
     },
     {
         img : '/assets/imgs/skills_3d_img_02.png',
@@ -26,23 +26,22 @@ const skill_list = [
 export default function Skills() {
     
     return (
-        <div className="skills">
-            <div className="scroll" id = 'skills'></div>
+        <div className="skills" id = 'skills' style={{ backgroundImage: `url(./assets/imgs/skill_bg.png)` }}>
             <div className="content">
                 <div className="title" data-aos="fade-up">
                     <div className="line"></div>
                     <h1>Skills &</h1>
-                    <h3>SERVICES</h3>
+                    <h3>Services</h3>
                 </div>
                 <div className="wrapper">
                     <div className="left" data-aos="fade-right">
-                        <h2>Custom Blockchain Solutions</h2>
-                        <p>Blockchain Engineers provides custom development solutions.</p>
+                        <h2>Custom Technical Solutions</h2>
+                        <p>Our team provides custom development solutions.</p>
                         <HashLink to="#contact"><MainButton label={'Get A Qoute'} /> </HashLink>
                     </div>
                     <div className="right" data-aos="fade-left">
-                        <h2>Automated Services</h2>
-                        <p>Essential tools to launch your creation, all in one place.</p>
+                        <h2>Cloud Services</h2>
+                        <p>Essential tools to launch your creation, all in one place. AWS (EC2, S3, Lambda), Azure, Google Cloud</p>
                         <div className="coming-soon">Coming Soon</div>
                     </div>
                 </div>

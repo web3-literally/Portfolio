@@ -1,11 +1,12 @@
 @import "../../global.scss";
 .team{
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     padding: 80px 64px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #000;
     @include mobile_potrait {
         padding: 80px 16px;
         height: auto;
@@ -26,29 +27,33 @@
             align-items: center;
             grid-area: auto;
             gap: 16px;
+            font-family: Bely_regular;
             @include mobile_potrait {
                 position: relative;
                 margin-bottom: 2rem;
             }
             h1{
                 font-weight: normal;
-                font-size: 6vw;
+                font-size: 4vw;
                 letter-spacing: 0.04em;
+                font-family: Bely_regular;
                 @include mobile_potrait {
                     font-size: 40px;
                 }
                 span{
+                    font-family: Bely_regular;
                 }
             }
             .title1{
+                font-family: Bely_regular;
                 span{
-                    color: #FF6CA1;
+                    color: #ff4d24;
                 }
             }
             .line{
                 width: 20px;
                 height: 2px;
-                background-color: #FF6CA1;
+                background-color: #ff4d24;
                 @include mobile_potrait {
                     position: absolute;
                     top: 18px;
@@ -99,47 +104,6 @@
                 flex-direction: column;
             }
 
-            .btns{
-                display: flex;
-                align-items: center;
-                grid-area: auto;
-                gap: 30px;
-                margin-top: 30px;
-                @include mobile_potrait {
-                    gap: 10px;
-                    margin-top: 20px;
-                }
-                a{
-                    text-decoration: none;
-                }
-                .arrow{
-                    width: 64px;
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: linear-gradient(141.8deg, #FF6CA1 10.93%, #FF327C 98.79%);
-                    border-radius: 24px;
-                    transition: all 0.3s ease;
-                    &:hover{
-                        transform: scale(0.95);
-                    }
-                    @include mobile_potrait {
-                        width: 40px;
-                        height: 40px;
-                        border-radius: 13px;
-                        img{
-                            width: 20px;
-                        }
-                    }
-                }
-                .pinkBtn{
-                    border-color: #FF6CA1;
-                    background: #b15c7b29;
-                    box-shadow: inset 0px 0px 16px #1220437a;
-                }
-            }
-
         }
 
         .label{
@@ -153,11 +117,10 @@
         .team-item{
             display: flex;
             flex: 1;
-            background-image: linear-gradient(315deg, #5d4ff8, #8824b7 27.08%, #b7188a 52.08%, #d71b75 77.6%, #ea3147) !important;
-            padding: 1px;
-            border-radius: 16px;
+            padding: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
+            background-color: #111;
             &:hover{
                 transform: translateY(-10px);
             }
@@ -169,12 +132,22 @@
                 width: 100%;
             }
             .item_content{
-                background-color: #020317;
-                border-radius: 16px;
+                
                 padding: 16px;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #ff4d24;
+                    content: "";
+                    clip-path: polygon(36% 0%, 0px 0px, 0px 51%);
+                }
             }
             img{
                 width: 54px;
@@ -191,6 +164,8 @@
             span{
                 width: calc(100% - 100px);
                 margin-bottom: 16px;
+                z-index: 1;
+                position: relative;
                 @include mobile_potrait {
                     width: calc(100%);
                 }

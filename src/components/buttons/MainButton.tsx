@@ -7,8 +7,7 @@ type PropsType = {
 export default function MainButton({handleClick, label, className}:PropsType) {
 
   return (
-    <button className={`main-button ${className}`} onClick={handleClick}
-    >
+    <button className={`main-button ${className}`} onClick={handleClick}>
       <span>{label}</span>
     </button>
   )

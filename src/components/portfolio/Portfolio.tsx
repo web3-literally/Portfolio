@@ -124,7 +124,7 @@ export default function Portfolio() {
             <div className="content">
                 <div className="title" data-aos="fade-left">
                     <div className="line"></div>
-                    <h1>PORTFOLIO</h1>
+                    <h1>Porfolio</h1>
                 </div>
                 <div className="tab-list" data-aos="fade-left">
                     <div className={`tab ${tabId === 0 ? 'active' : ''}`} onClick={() => setTabId(0)}> <span>NFT Marketplace</span> </div>

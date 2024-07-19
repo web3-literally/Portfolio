@@ -1,71 +1,70 @@
 @import "../../global.scss";
 
 .main-button {
+  // border: 1px #ffffff00 solid;
   border: none;
-  // border: 2px solid #0B4EFF;
   color: #fff;
   font-size: 18px;
-  width: fit-content;
   display: flex;
   justify-content: center;
   position: relative;
-  // background: rgba(28, 60, 99, 0.24);
-  // box-shadow: inset 0px 0px 16px rgba(18, 32, 67, 0.48);
-  // backdrop-filter: blur(60px);
-  border-radius: 24px;
   padding: 10px 30px;
-  white-space: nowrap;
-  overflow: hidden;
   cursor: pointer;
-
-  background-image: linear-gradient(79deg, rgba(99, 69, 237, 1) 0%, rgba(224, 57, 253, 1) 100%);
-
+  z-index: 1;
+  background-color: #ffffff00;
   transition: transform 75ms linear;
-
   @include mobile_potrait {
     font-size: 12px;
     line-height: 14px;
-    padding: 18px 25px;
+    padding: 10px 25px;
     border-radius: 20px;
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    left: 5px;
-    right: 5px;
-    bottom: 4px;
-    top: 4px;
-    border: 1.5px dashed #fff;
-    border-radius: 30px;
-    z-index: 1;
-  }
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(79deg, rgba(224, 57, 253, 1) 0%, rgba(99, 69, 237, 1) 100%);
-    z-index: -1;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    opacity: 0;
-  }
-  span{
-    z-index: 1;
-    position: relative;
-}
-  &:hover {
-    &::after {
-      opacity: 1;
-      z-index: 0;
-    }
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    content: "";
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
+  &::after {
+    position: absolute;
+    bottom: -8px;
+    left: -5px;
+    width: 50px;
+    height: 100%;
+    content: "";
+    background-color: #ff4d24;
+    z-index: -2;
+    clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  &:hover {
+    &::before {
+      border-color: #ff4d24;
+      top: -1px;
+    }
+    &::after {
+      bottom: 0px;
+      left: 1px;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  span {
+    z-index: 1;
+    position: relative;
+    white-space: nowrap;
+
+  }
 }
 
 

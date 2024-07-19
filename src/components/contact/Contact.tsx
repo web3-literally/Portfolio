@@ -4,6 +4,7 @@ export default function Contact() {
 
     return (
         <div className="contact">
+            <img src="/assets/imgs/footer_bg.png" alt="" className='bg'/>
             <div className="scroll" id='contact'></div>
             <div className="content">
                 <div className="title" data-aos="fade-up">
@@ -20,11 +21,11 @@ export default function Contact() {
 
 
                 </div>
-                <div>
+                {/* <div>
                     <img src="/assets/imgs/coin_01.png" alt="" className='coin1' />
                     <img src="/assets/imgs/coin_02.png" alt="" className='coin2' />
                     <img src="/assets/imgs/coin_03.png" alt="" className='coin3' />
-                </div>
+                </div> */}
 
 
             </div>

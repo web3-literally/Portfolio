@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 export default function Projects() {
     const isTabletOrMobile = useMediaQuery({ query: 'screen and (max-width: 768px) and (orientation:portrait)' })
     return (
-        <div className="projects" id='projects'>
+        <div className="projects" id='projects' style={{ backgroundImage: `url(./assets/imgs/blog_bg.png)` }}>
             <div className="content">
                 <h1></h1>
                 <div className="title" data-aos="fade-up">
@@ -24,13 +24,19 @@ export default function Projects() {
                     <div className="center" data-aos="fade-up">
                         <div className="counter">
                             <div className="counter_content">
-                                <h2><CountUp end={50} duration={5} /> +</h2>
-                                <p>CUSTOM PROJECTS</p>
+                                <div className="main_text">
+                                <h2><CountUp end={50} duration={5} /> </h2>+
+                                </div>
+                                
+                                <div className='sub'>
+                                    <p>CUSTOM PROJECTS</p>
+                                    <img src="/assets/imgs/zill-m1-line-a.png" alt="" />
+                                </div>
                             </div>
 
                         </div>
 
-                        <div className="img_list">
+                        {/* <div className="img_list">
                             <div className="card card1">
                                 <div className="card_content">
                                     {isTabletOrMobile ?
@@ -59,7 +65,7 @@ export default function Projects() {
                                     }
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="right" data-aos="fade-left">
                         <div className="label">
@@ -71,6 +77,8 @@ export default function Projects() {
 
 
             </div>
+            <img src="/assets/imgs/Landing-page-1-e1623240757885.png" alt="" className="ball2" />
+            <img src="/assets/imgs/photo-1.png" alt="" className="ball1" />
 
         </div>
 

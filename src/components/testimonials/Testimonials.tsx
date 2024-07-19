@@ -2,7 +2,7 @@ import './testimonials.scss'
 
 export default function Testimonials() {
     return (
-        <div className="testimonials">
+        <div className="testimonials" style={{ backgroundImage: `url(./assets/imgs/team_bg.jpg)` }}>
             <div className="content">
                 <div className="title" data-aos="fade-right">
                     <div className="line"></div>

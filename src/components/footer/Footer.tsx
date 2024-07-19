@@ -16,7 +16,7 @@ export default function Footer() {
                 <div className="wrapper">
                     <div className="left">
                         <div className="logo pc">
-                            <HashLink to="#home"> <img src="/assets/logo.png" alt="" /> BlockChain <span> Engineers</span></HashLink>
+                            <HashLink to="#home"> <img src="/assets/logo.png" alt="" /> Full stack <span> Engineers</span></HashLink>
                         </div>
 
 
@@ -24,7 +24,7 @@ export default function Footer() {
                         <div className="navList">
                             <ul>
                                 <li className={navId === "" ? "selected" : ""}>
-                                    <HashLink to="/" smooth>HOME</HashLink>
+                                    <HashLink to="/" smooth>Home</HashLink>
                                 </li>
                                 <li className={navId === "projects" ? "selected" : ""}>
                                     <HashLink to="/#projects" smooth>Projects</HashLink>

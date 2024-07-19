@@ -22,8 +22,8 @@ export default function Team({ setIsLoading }: LoadingType) {
         <div className="team" id='team'>
             <div className="content">
                 <div className="title" data-aos="fade-right">
-                    <h1 className='title1 text-shadow'><span>OUR</span></h1>
-                    <h1 className='title2 '>TEAM<span>TEAM</span></h1>
+                    <h1 className='title1 text-shadow'><span>Our</span></h1>
+                    <h1 className='title2 '>Team<span>Team</span></h1>
                     <div className="line"></div>
                 </div>
                 <div className="wrapper">

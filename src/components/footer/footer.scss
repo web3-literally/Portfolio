@@ -2,11 +2,12 @@
 .footer{
     width: 100%;
     padding: 80px 64px;
-    background-color: #020317;
+    
                     
     @include mobile_potrait {
         width: 100%;
         padding: 40px 16px;
+        background-color: #111;
     }
     .content{
         display: flex;
@@ -182,7 +183,7 @@
                     flex-direction: column;
                     &:hover{
                         h3{
-                            color: #5B88FF;
+                            color: #ff4d24;
                         }
                        
                     }
