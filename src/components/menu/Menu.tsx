@@ -35,10 +35,10 @@ export default function Menu({menuOpen, setMenuOpen}:MenuType) {
                 
                 <li onClick = {()=> setMenuOpen(false)} className = {"menuItem7 " + (menuOpen && "active")}>
                     <div className="socialLinks">
-                        <a href="http://discord.gg/" className = "" target="_blank"rel="noreferrer"><i className="fab fa-discord"></i></a> 
-                        <a href="https://twitter.com/" className = "" target="_blank"rel="noreferrer"><i className="fab fa-twitter"> </i></a> 
-                        <a href="https://www.linkedin.com/" className = "" target="_blank"rel="noreferrer"><i className="fab fa-linkedin-in"></i></a> 
-                        <a href="https://www.facebook.com/" className = "" target="_blank"rel="noreferrer"><i className="fab fa-facebook-f"></i></a> 
+                    <a href="https://discord.gg/bKNq3KUzNS" className="" target="_blank" rel="noreferrer"><i className="fab fa-discord"></i></a>
+        <a href="https://x.com/snowleopard0809" className="" target="_blank" rel="noreferrer"><i className="fab fa-twitter"> </i></a>
+        <a href="https://t.me/SnowBeautyLove" className="" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
+        <a href="https://github.com/web3-literally" className="" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
                         
                     </div>
                 </li>

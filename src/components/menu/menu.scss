@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: flex-start;
     transition: all 1s ease;
-    background-color: #00000022;
+    background-color: #ffffffaa;
     z-index: 15;
     position: fixed;
     top: 0rem;
@@ -86,7 +86,7 @@
             a{
                 text-decoration: none;
                 font-size: 1rem;
-                color: white;
+                color: #000;
                 @include mobile_potrait{
                     font-size: 20px;
                 }
@@ -134,7 +134,7 @@
                   }
                 }
                 a:nth-child(1){
-                    color: #C1CDEB;
+                    color: #6c019a;
                 }
                 a:nth-child(2){
                     color: #6FE8FF;

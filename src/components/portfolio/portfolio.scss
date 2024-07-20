@@ -84,8 +84,8 @@
                 position: relative;
 
                 @include mobile_potrait {
-                    font-size: 12px;
-                    padding: 7px 10px;
+                    font-size: 10px;
+                    padding: 7px 8px;
                 }
 
                 &::before {
@@ -114,6 +114,10 @@
                     -webkit-transition: 0.3s;
                     -o-transition: 0.3s;
                     transition: 0.3s;
+                    @include mobile_potrait {
+                        bottom: -5px;
+                        left: -3px;
+                      }
                   }
                   &:hover {
                     &::before {
@@ -211,6 +215,10 @@
                         -webkit-transition: 0.3s;
                         -o-transition: 0.3s;
                         transition: 0.3s;
+                        @include mobile_potrait {
+                            bottom: -5px;
+                            left: -3px;
+                          }
                     }
                     &:hover{
                         transform: translateY(-10px);

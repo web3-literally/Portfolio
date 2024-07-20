@@ -58,7 +58,7 @@ export default function Topbar({ menuOpen, setMenuOpen }: MenuType) {
         <a href="https://discord.gg/bKNq3KUzNS" className="" target="_blank" rel="noreferrer"><i className="fab fa-discord"></i></a>
         <a href="https://x.com/snowleopard0809" className="" target="_blank" rel="noreferrer"><i className="fab fa-twitter"> </i></a>
         <a href="https://t.me/SnowBeautyLove" className="" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
-        <a href="https://t.me/SnowBeautyLove" className="" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+        <a href="https://github.com/web3-literally" className="" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
 
       </div>
 
