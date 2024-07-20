@@ -5,7 +5,7 @@ import { HashLink } from "react-router-hash-link";
 export default function Home() {
 
     return (
-        <div className="home" id='home' style={{ backgroundImage: `url(./assets/BG-14.jpg)` }}>
+        <div className="home" id='home' style={{ backgroundImage: `url(./assets/imgs/about-bg-scaled.jpg)` }}>
             <div className="content">
                 <div className="title">
                     <h1>Build your Dream website</h1>

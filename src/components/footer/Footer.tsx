@@ -12,16 +12,12 @@ export default function Footer() {
     }, [setNavId, search]);
     return (
         <div className="footer">
-            <div className="content" data-aos="fade-up">
+            <div className="content">
                 <div className="wrapper">
-                    <div className="left">
-                        <div className="logo pc">
-                            <HashLink to="#home"> <img src="/assets/logo.png" alt="" /> Full stack <span> Engineers</span></HashLink>
-                        </div>
-
-
-
-                        <div className="navList">
+                    {/* <div className="logo">
+                        <HashLink to="#home"> <img src="/assets/logo.png" alt="" /></HashLink>
+                    </div> */}
+                    <div className="navList">
                             <ul>
                                 <li className={navId === "" ? "selected" : ""}>
                                     <HashLink to="/" smooth>Home</HashLink>
@@ -44,42 +40,6 @@ export default function Footer() {
 
                             </ul>
                         </div>
-                        <div className="socialLinks">
-                            <a href="https://discord.gg/" className="" target="_blank" rel="noreferrer"><i className="fab fa-discord"></i></a>
-                            <a href="https://twitter.com/" className="" target="_blank" rel="noreferrer"><i className="fab fa-twitter"> </i></a>
-                            <a href="https://www.linkedin.com/" className="" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.facebook.com/" className="" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
-
-                        </div>
-                        <div className="logo mob">
-                            <HashLink to="#home"> <img src="/assets/logo.png" alt="" /></HashLink>
-                        </div>
-                    </div>
-                    <div className="right">
-                        <div className="col">
-                            <h3>Company</h3>
-                            <div className="links">
-                                <HashLink to="/" smooth>About Us</HashLink>
-                                <HashLink to="/referral_program" smooth>Referral Program</HashLink>
-                                <a href="/" className="" target="_blank" rel="noreferrer">Whitepaper</a>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <h3>Resources</h3>
-                            <div className="links">
-                                <a href="https://github.com/web3-literally" className="" target="_blank" rel="noreferrer">Github</a>
-                                <a href="https://medium.com/" className="" target="_blank" rel="noreferrer">Blog</a>
-                                <HashLink to="/faqs" smooth>FAQs</HashLink>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <h3>Legal</h3>
-                            <div className="links">
-                                <a href="/" className="" target="_blank" rel="noreferrer">Terms of Service</a>
-                                <a href="/" className="" target="_blank" rel="noreferrer">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

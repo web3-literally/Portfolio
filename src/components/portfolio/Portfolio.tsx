@@ -120,7 +120,7 @@ export default function Portfolio() {
     const [tabId, setTabId] = useState(0)
     
     return (
-        <div className="portfolio" id='portfolio'>
+        <div className="portfolio" id='portfolio' style={{ backgroundImage: `url(./assets/imgs/cta-section.jpg)` }}>
             <div className="content">
                 <div className="title" data-aos="fade-left">
                     <div className="line"></div>

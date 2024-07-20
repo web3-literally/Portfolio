@@ -30,13 +30,14 @@ export default function Team({ setIsLoading }: LoadingType) {
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 834.png" alt="" onLoad={onLoad} />
+                            <img src="/assets/avatars/team_02.jpg" alt="" onLoad={onLoad} />
                             <span>
-                                <h3>RAny D.</h3>
-                                <p>Everything can be done better than it has been done so far.</p>
+                                <h3>Andy Jin.</h3>
+                                <h4>Founder</h4>
+                                <p>Turning ideas into full stack realities.</p>
                                 <div className="line"></div>
                             </span>
-                            <div className="socialLinks">
+                            {/* <div className="socialLinks">
                                 <a href="discord.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-discord"></i>
                                 </a>
@@ -44,19 +45,20 @@ export default function Team({ setIsLoading }: LoadingType) {
                                 <a href="facebook.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-facebook"></i>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 842 (1).png" alt="" onLoad={onLoad} />
+                            <img src="/assets/avatars/team_03.jpg" alt="" onLoad={onLoad} />
                             <span>
-                                <h3>GaRRy H.</h3>
+                                <h3>GaRRy Wang.</h3>
+                                <h4>Co-Founder</h4>
                                 <p>Everything can be done better than it has been done so far.</p>
                                 <div className="line"></div>
                             </span>
-                            <div className="socialLinks">
+                            {/* <div className="socialLinks">
                                 <a href="discord.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-discord"></i>
                                 </a>
@@ -64,19 +66,20 @@ export default function Team({ setIsLoading }: LoadingType) {
                                 <a href="facebook.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-facebook"></i>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 842 (2).png" alt="" onLoad={onLoad} />
+                            <img src="/assets/avatars/team_04.jpg" alt="" onLoad={onLoad} />
                             <span>
-                                <h3>Mary A.</h3>
+                                <h3>Manry Cheng.</h3>
+                                <h4>Business Manager</h4>
                                 <p>To succeed, you need to either change your dreams or improve your skills.</p>
                                 <div className="line"></div>
                             </span>
-                            <div className="socialLinks">
+                            {/* <div className="socialLinks">
                                 <a href="discord.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-discord"></i>
                                 </a>
@@ -84,7 +87,28 @@ export default function Team({ setIsLoading }: LoadingType) {
                                 <a href="facebook.com" target="_blank" className="iconBtn">
                                     <i className="fab fa-facebook"></i>
                                 </a>
-                            </div>
+                            </div> */}
+                        </div>
+                    </div>
+
+                    <div className="team-item" data-aos="fade-right">
+                        <div className="item_content">
+                            <img src="/assets/avatars/team_05.jpg" alt="" onLoad={onLoad} />
+                            <span>
+                                <h3>Lucca Wang.</h3>
+                                <h4>Full Stack Engineer</h4>
+                                <p>Crafting solutions from frontend design to backend logic.</p>
+                                <div className="line"></div>
+                            </span>
+                            {/* <div className="socialLinks">
+                                <a href="discord.com" target="_blank" className="iconBtn">
+                                    <i className="fab fa-discord"></i>
+                                </a>
+
+                                <a href="facebook.com" target="_blank" className="iconBtn">
+                                    <i className="fab fa-facebook"></i>
+                                </a>
+                            </div> */}
                         </div>
                     </div>
                 </div>

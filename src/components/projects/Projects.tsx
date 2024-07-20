@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 export default function Projects() {
     const isTabletOrMobile = useMediaQuery({ query: 'screen and (max-width: 768px) and (orientation:portrait)' })
     return (
-        <div className="projects" id='projects' style={{ backgroundImage: `url(./assets/imgs/blog_bg.png)` }}>
+        <div className="projects" id='projects' style={{ backgroundImage: `url(./assets/imgs/blog_bg.jpg)` }}>
             <div className="content">
                 <h1></h1>
                 <div className="title" data-aos="fade-up">

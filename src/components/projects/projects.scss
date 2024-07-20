@@ -52,7 +52,7 @@
                 line-height: 5vw;
                 text-transform: uppercase;
                 letter-spacing: 0.04em;
-                background: linear-gradient(130.38deg, #ECF3FF 66.3%, rgba(236, 243, 255, 0) 101.92%);
+                background: linear-gradient(90deg, #e22e59 .54%, #273fd2 30.52%, #cb47f9 49.27%, #f90 72.82%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -130,7 +130,7 @@
                 display: flex;
                 align-items: center;
                 letter-spacing: -0.03em;
-                color: #ECF3FF;
+                color: #000;
 
                 @include mobile_potrait {
                     display: none;
@@ -157,14 +157,14 @@
                 margin-bottom: 32px;
                 position: relative;
                 width: fit-content;
-
+                background-color: #fff;
                 &::before {
                     position: absolute;
                     top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    border: 1px solid #fff;
+                    border: 1px solid #00000033;
                     content: "";
                     -webkit-transition: 0.3s;
                     -o-transition: 0.3s;
@@ -179,7 +179,7 @@
                     height: 50%;
                     content: "";
                     background-color: #ff4d24;
-                    z-index: -2;
+                    z-index: 1;
                     clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
                     -webkit-transition: 0.3s;
                     -o-transition: 0.3s;
@@ -188,14 +188,16 @@
 
                 .counter_content {
                     padding: 16px 32px;
+                    
                 }
                 .main_text{
-                    color: #fff;  
                     font-size: 180px;
-                    color: #fff;
+                    color: #f90;
                     font-weight: 700;
                     letter-spacing: 0.04em;
                     display: flex;
+                    z-index: 2;
+                    position: relative;
                     @include mobile_potrait {
                         font-size: 48px;
                         line-height: 52px;
@@ -206,8 +208,8 @@
                 }
                 h2 {
                     font-family: Bely_regular;
-                    background: linear-gradient(130.38deg, #ECF3FF 66.3%, rgba(236, 243, 255, 0) 101.92%);
-                    -webkit-background-clip: text;
+                    background: linear-gradient(45deg, #5478f9 .54%, #c427d2 30.52%, #af47f9 49.27%, #f90 72.82%);
+                -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
                     line-height: 1;
@@ -220,6 +222,8 @@
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
+                    z-index: 2;
+                    position: relative;
                     img{
                         
                         @include mobile_potrait {
@@ -231,7 +235,7 @@
                     font-weight: 700;
                     font-size: 36px;
                     letter-spacing: 0.05em;
-                    color: #fff;
+                    color: #000;
                     opacity: 0.8;
                     @include mobile_potrait {
                         font-size: 16px;
@@ -329,14 +333,16 @@
         left: 3%;
         width: 15%;
         bottom: 10%;
-        filter: grayscale(1) brightness(1.2);
+        filter: grayscale(1) brightness(2);
+        opacity: 0.2;
     }
 
     .ball2 {
         position: absolute;
         object-fit: cover;
-        filter: grayscale(1) brightness(0.8);
+        filter: grayscale(1) brightness(2);
         // opacity: 0.8;
+        opacity: 0.2;
         @include mobile_potrait {
             width: 100%;
         }

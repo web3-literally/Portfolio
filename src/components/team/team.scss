@@ -6,7 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    // background-color: #eee;
+    background-image: linear-gradient(315deg, #e0deff, #fcf5ff 27.08%, #ffe0f6 52.08%, #fce6f0 77.6%, #ffe9eb) !important;
+    
     @include mobile_potrait {
         padding: 80px 16px;
         height: auto;
@@ -61,7 +63,7 @@
                 }
             }
             .title2{
-                background: linear-gradient(151.25deg, #99a8c9 36.76%, #17202400 127.37%);
+                background: linear-gradient(151.25deg, #000000 36.76%, #27272700 127.37%);
                 background-repeat: repeat;
                 background-clip: text;
                 -webkit-background-clip: text;
@@ -73,7 +75,7 @@
                     position: absolute;
                     left: 1px;
                     top : -1px;
-                    background: linear-gradient(134.01deg, #FFFFFF 51.35%, rgba(255, 255, 255, 0) 71.53%);
+                    background: linear-gradient(134.01deg, #000000 51.35%, rgba(255, 255, 255, 0) 71.53%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
@@ -120,7 +122,8 @@
             padding: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background-color: #111;
+            background-color: #fff;
+            border: 1px #00000033 solid;
             &:hover{
                 transform: translateY(-10px);
             }
@@ -162,30 +165,38 @@
                 }
             }
             span{
-                width: calc(100% - 100px);
+                width: 100%;
                 margin-bottom: 16px;
                 z-index: 1;
                 position: relative;
                 @include mobile_potrait {
-                    width: calc(100%);
+                    width: 100%;
                 }
                 h3{
-                    color: #ECF3FF;
+                    color: #000;
                     font-style: normal;
                     font-weight: 500;
                     font-size: 24px;
                     line-height: 24px;
                     letter-spacing: 0.04em;
-                    color: #ECF3FF;
-                    margin-bottom: 1vw;
+                    margin-bottom: 10px;
+                }
+                h4{
+                    color: #000;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                    margin-bottom: 10px;
                 }
                 p{
                     font-weight: 500;
                     font-size: 16px;
-                    line-height: 32px;
+                    line-height: 22px;
                     padding-bottom: 10px;
                     letter-spacing: 0.05em;
-                    color: #ECF3FF;
+                    color: #222;
                     transition: all 0.3s ease;
                     position: relative;
                     opacity: 0.8;
@@ -195,7 +206,7 @@
                 width: 100%;
                 height: 2px;
 
-                background: linear-gradient(to right, #ebf2ff 0%, #ecf3ff00 93.83%);
+                background: linear-gradient(to right, #090909 0%, #20202000 93.83%);
                 opacity: 0.3;
                 border-radius: 16px;
             }

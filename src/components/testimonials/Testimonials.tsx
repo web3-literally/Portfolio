@@ -2,7 +2,7 @@ import './testimonials.scss'
 
 export default function Testimonials() {
     return (
-        <div className="testimonials" style={{ backgroundImage: `url(./assets/imgs/team_bg.jpg)` }}>
+        <div className="testimonials" >
             <div className="content">
                 <div className="title" data-aos="fade-right">
                     <div className="line"></div>
@@ -12,45 +12,69 @@ export default function Testimonials() {
                 <div className="wrapper">
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/advisor-john-aitchison,-ph-d.png" alt="" />
+                            <img src="/assets/avatars/christoph-a-muller-160x160.png" alt="" />
                             <span>
-                                <h3>Michael L.</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo velit ab suscipit vel exercitationem minima, necessitatibus hic dolores. Aliquam quia id nisi et quisquam! Hic, cum? Quos, ipsum suscipit?. Thank you!</p>
-                                <div className="line"></div>
+                                <h3>Christoph A. Müller</h3>
+                                <p>They really understood our needs and had a great work culture. They took care of their teams!</p>
+                                <h4>Projects</h4>
+                                <p>API Development, Web Development, DevOps Managed</p>
                             </span>
+                            <div className="item_bottom">
+                                <div className="line"></div>
+                                <div className="stars">★★★★★</div>
+                            </div>
+
                         </div>
                     </div>
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 835.png" alt="" />
+                            <img src="/assets/avatars/marek-wojtaszek-160x160.png" alt="" />
                             <span>
-                                <h3>Michael L.</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo velit ab suscipit vel exercitationem minima, necessitatibus hic dolores. Aliquam quia id nisi et quisquam! Hic, cum? Quos, ipsum suscipit?. Thank you!</p>
-                                <div className="line"></div>
+                                <h3>Manos Koumandakis</h3>
+                                <p>They were very responsive and reactive both in the planning and execution of the project. Thank you!</p>
+                                <h4>Projects</h4>
+                                <p>Web Development</p>
                             </span>
+                            <div className="item_bottom">
+                                <div className="line"></div>
+                                <div className="stars">★★★★★</div>
+                            </div>
+
                         </div>
                     </div>
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 834.png" alt="" />
+                            <img src="/assets/avatars/rony-atoun-160x160.png" alt="" />
                             <span>
-                                <h3>Michael L.</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo velit ab suscipit vel exercitationem minima, necessitatibus hic dolores. Aliquam quia id nisi et quisquam! Hic, cum? Quos, ipsum suscipit?. Thank you!</p>
-                                <div className="line"></div>
+                                <h3>Rony Atoun</h3>
+                                <p>They demonstrate a combination of responsiveness, proactivity, high-quality staff, and an overall can-do attitude.</p>
+                                <h4>Projects</h4>
+                                <p>DevOps Managed Services, IT Staff Augmentation</p>
                             </span>
+                            <div className="item_bottom">
+                                <div className="line"></div>
+                                <div className="stars">★★★★★</div>
+                            </div>
+
                         </div>
                     </div>
 
                     <div className="team-item" data-aos="fade-left">
                         <div className="item_content">
-                            <img src="/assets/imgs/Ellipse 842 (1).png" alt="" />
+                            <img src="/assets/avatars/amer-attar-160x160.png" alt="" />
                             <span>
-                                <h3>Matt S.</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo explicabo velit ab suscipit vel exercitationem minima, necessitatibus hic dolores. Aliquam quia id nisi et quisquam! Hic, cum? Quos, ipsum suscipit.  Highly recommend them!</p>
-                                <div className="line"></div>
+                                <h3>Amer Attar</h3>
+                                <p>Their communication, flexibility, and ability to quickly adapt to scope changes was impressive.</p>
+                                <h4>Projects</h4>
+                                <p>UX/UI Design</p>
                             </span>
+                            <div className="item_bottom">
+                                <div className="line"></div>
+                                <div className="stars">★★★★★</div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
