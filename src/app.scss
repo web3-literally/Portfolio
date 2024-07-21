@@ -16,6 +16,7 @@ body{
 .app {
   background-size: cover;
   width: 100%;
+  overflow: hidden;
   @include mobile_potrait {
   }
 }
