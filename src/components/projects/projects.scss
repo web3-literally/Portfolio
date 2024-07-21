@@ -10,6 +10,7 @@
     background-color: #000;
     background-size: 100%;
     background-repeat: no-repeat;
+
     @include mobile_potrait {
         // height: auto;
         background-size: cover;
@@ -57,6 +58,7 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 font-family: Bely_regular;
+
                 @include mobile_potrait {
                     font-size: 40px;
                     line-height: 50px;
@@ -158,6 +160,7 @@
                 position: relative;
                 width: fit-content;
                 background-color: #fff;
+
                 &::before {
                     position: absolute;
                     top: 0;
@@ -188,9 +191,10 @@
 
                 .counter_content {
                     padding: 16px 32px;
-                    
+
                 }
-                .main_text{
+
+                .main_text {
                     font-size: 180px;
                     color: #f90;
                     font-weight: 700;
@@ -198,6 +202,7 @@
                     display: flex;
                     z-index: 2;
                     position: relative;
+
                     @include mobile_potrait {
                         font-size: 48px;
                         line-height: 52px;
@@ -206,17 +211,19 @@
                         justify-content: center;
                     }
                 }
+
                 h2 {
                     font-family: Bely_regular;
                     background: linear-gradient(45deg, #5478f9 .54%, #c427d2 30.52%, #af47f9 49.27%, #f90 72.82%);
-                -webkit-background-clip: text;
+                    -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
                     line-height: 1;
-                    
 
-                    
+
+
                 }
+
                 .sub {
                     display: flex;
                     align-items: center;
@@ -224,19 +231,22 @@
                     flex-direction: column;
                     z-index: 2;
                     position: relative;
-                    img{
-                        
+
+                    img {
+
                         @include mobile_potrait {
                             width: 50%;
                         }
                     }
                 }
+
                 p {
                     font-weight: 700;
                     font-size: 36px;
                     letter-spacing: 0.05em;
                     color: #000;
                     opacity: 0.8;
+
                     @include mobile_potrait {
                         font-size: 16px;
                     }
@@ -335,6 +345,45 @@
         bottom: 10%;
         filter: grayscale(1) brightness(2);
         opacity: 0.2;
+        animation: cardAni 10s ease-in-out 0s infinite;
+
+        @keyframes cardAni {
+            0% {
+                transform: rotateY(-10deg) rotateX(10deg) translate3d(0px, 0px, -10px);
+            }
+
+            50% {
+                transform: rotateY(10deg) rotateX(0deg) translate3d(-30px, -50px, 20px);
+            }
+
+            100% {
+                transform: rotateY(-10deg) rotateX(10deg) translate3d(0px, 0px, -10px);
+            }
+        }
+    }
+
+    .ball3 {
+        position: absolute;
+        left: 70%;
+        width: 7%;
+        bottom: 0;
+        filter: grayscale(1) brightness(2);
+        opacity: 0.2;
+        animation: cardAni1 10s ease-in-out 3s infinite;
+
+        @keyframes cardAni1 {
+            0% {
+                transform: rotateY(5deg) rotateX(5deg) translate3d(0px, 0px, 5px);
+            }
+
+            50% {
+                transform: rotateY(-5deg) rotateX(-5deg) translate3d(20px, -40px, -20px);
+            }
+
+            100% {
+                transform: rotateY(5deg) rotateX(5deg) translate3d(0px, 0px, 5px);
+            }
+        }
     }
 
     .ball2 {
@@ -343,6 +392,7 @@
         filter: grayscale(1) brightness(2);
         // opacity: 0.8;
         opacity: 0.2;
+
         @include mobile_potrait {
             width: 100%;
         }
