@@ -32,7 +32,7 @@ export default function Team({ setIsLoading }: LoadingType) {
                         <div className="item_content">
                             <img src="/assets/avatars/team_02.jpg" alt="" onLoad={onLoad} />
                             <span>
-                                <h3>Andy Jin.</h3>
+                                <h3>TieLong Li.</h3>
                                 <h4>Founder</h4>
                                 <p>Turning ideas into full stack realities.</p>
                                 <div className="line"></div>
