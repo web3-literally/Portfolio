@@ -154,7 +154,7 @@
         }
 
         .no_strok {
-            color: #000;
+            color: #222;
             font-size: 86px;
             font-weight: 700;
             text-transform: uppercase;
@@ -221,6 +221,8 @@
         @include mobile_potrait {
             display: flex;
             position: absolute;
+            bottom: 0%;
+            right: 10%;
         }
 
         img {

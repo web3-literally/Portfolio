@@ -12,6 +12,7 @@
     
     @include mobile_potrait {
         padding: 80px 16px;
+        
     }
 
     .content {
@@ -133,7 +134,9 @@
                     height: 120px;
                     margin-right: 32px;
 
-                    @include mobile_potrait {}
+                    @include mobile_potrait {
+                        margin-right: 0;
+                    }
                 }
 
                 a {
@@ -305,7 +308,7 @@
         left: 0;
         width: 100%;
         @include mobile_potrait {
-            width: 100%;
+            width: 200%;
             height: 100%;
         }
     }

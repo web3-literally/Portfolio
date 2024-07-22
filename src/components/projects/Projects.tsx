@@ -17,7 +17,7 @@ export default function Projects() {
                 <div className="wrapper">
                     <div className="left" data-aos="fade-right">
                         <div className="logo">
-                            <img src="/assets/logo.png" alt="" />
+                            <img src="/assets/logo_icon.png" alt="" />
                         </div>
 
                     </div>
@@ -79,6 +79,7 @@ export default function Projects() {
             </div>
             <img src="/assets/imgs/Landing-page-1-e1623240757885.png" alt="" className="ball2" />
             <img src="/assets/imgs/photo-1.png" alt="" className="ball1" />
+            <img src="/assets/imgs/photo-1.png" alt="" className="ball3" />
 
         </div>
 
