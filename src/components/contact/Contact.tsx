@@ -16,12 +16,12 @@ export default function Contact() {
                         <div className="logo">
                             <a href="#home"> <img src="/assets/logo.png" alt="" /></a>
                         </div>
-                        <div className="socialLinks">
+                        {/* <div className="socialLinks">
                         <a href="https://discord.gg/bKNq3KUzNS" className="" target="_blank" rel="noreferrer"><i className="fab fa-discord"></i></a>
                         <a href="https://x.com/snowleopard0809" className="" target="_blank" rel="noreferrer"><i className="fab fa-twitter"> </i></a>
                         <a href="https://t.me/SnowBeautyLove" className="" target="_blank" rel="noreferrer"><i className="fab fa-telegram"></i></a>
 
-                    </div>
+                    </div> */}
 
                     </div>
                     
