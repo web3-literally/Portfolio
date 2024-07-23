@@ -64,7 +64,7 @@ export default function HomePage() {
           <Home/>
           <Projects/>
           <Skills/>
-          <Portfolio/>
+          {/* <Portfolio/> */}
           <Testimonials/>
           <Team/>
           <Contact/>
