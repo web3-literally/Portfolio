@@ -30,10 +30,10 @@ export default function Team({ setIsLoading }: LoadingType) {
 
                     <div className="team-item" data-aos="fade-right">
                         <div className="item_content">
-                            <img src="/assets/avatars/team_02.jpg" alt="" onLoad={onLoad} />
+                            <img src="/assets/avatars/Hu_Caimei.jpg" alt="" onLoad={onLoad} />
                             <span>
-                                <h3>TieLong Li.</h3>
-                                <h4>Founder</h4>
+                                <h3>Cai Mei.</h3>
+                                <h4>Web Backend Developer</h4>
                                 <p>Turning ideas into full stack realities.</p>
                                 <div className="line"></div>
                             </span>
@@ -54,7 +54,7 @@ export default function Team({ setIsLoading }: LoadingType) {
                             <img src="/assets/avatars/team_03.jpg" alt="" onLoad={onLoad} />
                             <span>
                                 <h3>GaRRy Wang.</h3>
-                                <h4>Co-Founder</h4>
+                                <h4>UI/UX Designer</h4>
                                 <p>Everything can be done better than it has been done so far.</p>
                                 <div className="line"></div>
                             </span>
@@ -75,7 +75,7 @@ export default function Team({ setIsLoading }: LoadingType) {
                             <img src="/assets/avatars/team_04.jpg" alt="" onLoad={onLoad} />
                             <span>
                                 <h3>Manry Cheng.</h3>
-                                <h4>Business Manager</h4>
+                                <h4>Frontend Developer</h4>
                                 <p>To succeed, you need to either change your dreams or improve your skills.</p>
                                 <div className="line"></div>
                             </span>
@@ -96,7 +96,7 @@ export default function Team({ setIsLoading }: LoadingType) {
                             <img src="/assets/avatars/team_05.jpg" alt="" onLoad={onLoad} />
                             <span>
                                 <h3>Lucca Wang.</h3>
-                                <h4>Full Stack Engineer</h4>
+                                <h4>Devops Engineer</h4>
                                 <p>Crafting solutions from frontend design to backend logic.</p>
                                 <div className="line"></div>
                             </span>
